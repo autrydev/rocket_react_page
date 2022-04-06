@@ -52,15 +52,18 @@ class Simulation extends Component {
                         <form onSubmit={this.handleSubmit}>
                             <label>
                                 Wind Direction
-                                <input name="direction" type="text" value={this.state.direction} onChange={this.handleChange} />
+                                <select name="direction" value={this.state.direction} onChange={this.handleChange}>
+                                    <option value="right">Right</option>
+                                    <option value="left">Left</option>
+                                </select>
                             </label>
                             <label>
                                 Wind Speed
-                                <input name="wind" type="text" value={this.state.wind} onChange={this.handleChange} />
+                                <input name="wind" type="number" min="1" max="10" value={this.state.wind} onChange={this.handleChange} />
                             </label>
                             <label>
                                 Fin Size
-                                <input name="finSize" type="text" value={this.state.finSize} onChange={this.handleChange} />
+                                <input name="finSize" type="number" min="1" max="10" value={this.state.finSize} onChange={this.handleChange} />
                             </label>
                             <input type="submit" value="Submit" />
                         </form>
