@@ -1,8 +1,20 @@
-import React from "react";
-import { Box } from '@mui/material';
+import React, { useRef } from "react";
+import { Box, Button } from '@mui/material';
 import './styles.css';
 
 function EduContent() {
+    const windRef = useRef()
+    const finsRef = useRef()
+    const flyRef = useRef()
+    const quizRef = useRef()
+    const simRef = useRef()
+
+    const windScroll = () => windRef.current.scrollIntoView();
+    const finsScroll = () => finsRef.current.scrollIntoView();
+    const flyScroll = () => flyRef.current.scrollIntoView();
+    const quizScroll = () => quizRef.current.scrollIntoView();
+    const simScroll = () => simRef.current.scrollIntoView();
+
     return(
       <Box 
         sx={{ 
@@ -29,14 +41,66 @@ function EduContent() {
                 }}
             >
                 {/* Input T.O.C */}
-                <h3 className="table-content">Table of Content: </h3>
-                <ul className="table-list">
-                    <li>Wind</li>
+                <h3 className = "table-content">Table of Content: </h3>
+                <button 
+                    className = "table-list"
+                    variant = "text"
+                    onClick = {windScroll}
+                >
+                    Wind
+                </button>
+                <br/>
+
+                <button 
+                    className="table-list"
+                    variant = "text"
+                    onClick = {finsScroll}
+                >
+                    Fins
+                </button>
+                <br/>
+
+                <button 
+                    className="table-list"
+                    variant = "text"
+                    onClick = {flyScroll}
+                >
+                    Flying with the Wind
+                </button>
+                <br/>
+
+                <button 
+                    className="table-list"
+                    variant = "text"
+                    onClick = {quizScroll}
+                >
+                    Test Your Knowledge!
+                </button>
+                <br/>
+
+                <button 
+                    className="table-list"
+                    variant = "text"
+                    onClick = {simScroll}
+                >
+                    Simulation
+                </button>
+                <br/>
+
+                {/* <ul className="table-list">
+                    <li>
+                        <button 
+                            className="table-list"
+                            variant = "text"
+                        >
+                            Wind
+                        </button>
+                    </li>
                     <li>Fins</li>
                     <li>Flying with the Wind</li>
                     <li>Test Your Knowledge!</li>
                     <li>Simulation</li>
-                </ul>
+                </ul> */}
             </Box>
                 
             {/* Rocket Graphic */}
@@ -46,7 +110,7 @@ function EduContent() {
                     p: 10,
                     width: 350,
                     height: 100,
-                    marginLeft: 8, 
+                    marginLeft: 6, 
                     borderRadius: 7,
                     bgcolor: '#E6E6E6',
                     display: 'flex'
@@ -64,7 +128,7 @@ function EduContent() {
                     marginRight: 150
                 }}
             >
-                <h2 className="header-font">Wind</h2>
+                <h2 className="header-font" ref = {windRef}>Wind</h2>
                 <p className = "content-font" >
                     When flying a rocket into the sky, you would think the rocket would immediately
                     go in the direction it’s pointing as soon as it launches - however, that’s not what happens. 
@@ -75,7 +139,7 @@ function EduContent() {
                 </p>
                 <br/>
 
-                <h2 className="header-font">Fins</h2>
+                <h2 className="header-font" ref = {finsRef}>Fins</h2>
                 <p className="content-font">
                     Before we can understand how wind affects the rocket, we first need to understand what fins 
                     are and what they’re used for. Fins are attached to rockets to provide stability and control 
@@ -85,7 +149,7 @@ function EduContent() {
                 </p>
                 <br/>
 
-                <h2 className="header-font">Flying with the Wind</h2>
+                <h2 className="header-font" ref = {flyRef}>Flying with the Wind</h2>
                 <p className="content-font">
                     When you put a piece of paper in front of a fan, the paper usually moves away from the fan. However, 
                     when a rocket experiences wind, the force of the wind is greater on the fins than the rest of the 
@@ -99,11 +163,11 @@ function EduContent() {
                 </p>
                 <br/>
 
-                <h2 className="header-font">Test Your Knowledge!</h2>
+                <h2 className="header-font" ref = {quizRef}>Test Your Knowledge!</h2>
                 {/* Quiz */}
                 <br/>
 
-                <h2 className="header-font">Simulation</h2>
+                <h2 className="header-font" ref = {simRef}>Simulation</h2>
                 {/* Simulation App */}
                 <br/>
             </div>
