@@ -1,8 +1,10 @@
 import React, { useRef } from "react";
 import { Box, Button } from '@mui/material';
+import rocketwind from '../Assets/rocketwind.gif'
 import './styles.css';
 
 function EduContent() {
+    // Link from table of content to header section
     const windRef = useRef()
     const finsRef = useRef()
     const flyRef = useRef()
@@ -25,7 +27,7 @@ function EduContent() {
             <div style={{display: 'flex', justifyContent: 'center'}}>
                 <h1 className="header-font">Effects of Wind Gusts on Rockets</h1>
             </div>
-            
+            <br/> <br/>
             {/* Table of Content */}
             <Box
                 sx={{ 
@@ -104,21 +106,17 @@ function EduContent() {
             </Box>
                 
             {/* Rocket Graphic */}
-            <Box
-                sx={{ 
-                    m: 1,
-                    p: 10,
-                    width: 350,
-                    height: 100,
-                    marginLeft: 6, 
-                    borderRadius: 7,
-                    bgcolor: '#E6E6E6',
-                    display: 'flex'
-                }}
-            >
-                {/* Input Graphic */}
-                <h5 className="content-font">Graphic</h5>
-            </Box>
+            <img src = {rocketwind} className = ".gif"
+                style = {{
+                    width:500,
+                    height:300,
+                    marginLeft:70,
+                    marginTop:-8,
+                    borderRadius: 30,
+                    borderWidth: 5,
+                }} 
+            />
+            <br/> <br/>
 
             {/* Educational Content */}
             <div
