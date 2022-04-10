@@ -1,13 +1,58 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.str_button { 
+  background-color: #f1356d;
+  font-size: 40px;
+  height: 80px;
+  width: 250px;
+  margin: 100px;
+  border-radius: 45px;
+  text-size-adjust: 10px;
+  border: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.start-container { 
+  background-Image: url("./images/space_start.jpg");
+  
 }
+/*
+.create { 
+  background-Image: url("./images/space_form.jpg");
+}
+*/
+.direction-form select{
+  padding: 8px 10px;
+  background-color: orangered;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: large;
+}
+
+.submit_button { 
+  background-color: orangered;
+  border-radius: 10px;
+  height: 45px;
+  width: 130px;
+  font-size: 18px;
+  margin: 30px;
+}
+
+.wind-form input { 
+  padding: 8px 10px;
+  border-radius: 5px ;
+  margin: 5px 0;
+  background-color: orangered;
+  font-size: large;
+}
+
+.finSize-form input { 
+  padding: 8px 10px;
+  border-radius: 5px ;
+  margin: 5px 0;
+  background-color: orangered;
+  font-size: large;
+
+}
+
+.form-data { 
+  font-size:large;
+}
+
