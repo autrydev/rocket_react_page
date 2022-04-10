@@ -1,34 +1,46 @@
 /* Educational Content */
 .content-font {
-    font-family: 'Montserrat', sans-serif;
-  }
+  font-family: 'Montserrat', sans-serif;
+}
 
-  .font-link {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-  }
+.font-link {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
 
-  .table-content {
-    font-family: 'Montserrat', sans-serif;
-    position: center;
-    left: 10;
-    text-align: center;
-  }
+.table-content {
+  font-family: 'Montserrat', sans-serif;
+  position: center;
+  left: 10;
+  text-align: center;
+}
 
-  .table-list {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    line-height: 35px;
-    padding: 0;
-    border: none;
-    background: none;
-    margin-left: 30px;
-  }
+.table-list {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 35px;
+  padding: 0;
+  border: none;
+  background: none;
+  margin-left: 30px;
+}
 
-  .gif {
-    width: 200;
-    height: 100;
-    float: right;
-    border-radius: 7;
-    display: 'flex';
-  }
+.gif {
+  width: 200;
+  height: 100;
+  float: right;
+  border-radius: 7;
+  display: 'flex';
+}
+
+/* Quiz */
+.quizContent{
+  display: table;
+  background-color: #E6E6E6;
+  margin: 0 auto;
+  max-width: 900px;
+  max-height: 800px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
