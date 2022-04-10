@@ -1,4 +1,12 @@
 import React, { Component } from 'react';
+import { motion } from "framer-motion";
+import "../index.css";
+import "../images/space_start.jpg";
+
+
+
+const space_picture = new URL("../images/space_start.jpg", import.meta.url);
+const rocket_picture = new URL("../images/rocket_start.png", import.meta.url);
 
 class Simulation extends Component {
     state = {
@@ -8,9 +16,9 @@ class Simulation extends Component {
         finSize: 0, // integer values 1 - 10
         wind: 0 // integer values 1 - 10
     }
-
-    constructor() {
-        super();
+    
+    constructor(props) {
+        super(props);
         this.handleStart = this.handleStart.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -37,36 +45,48 @@ class Simulation extends Component {
     render() { 
         let started = this.state.started;
         let screen = this.state.screen;
+       
         return (
             <div>
                 <h1>SIMULATION APP</h1>
                 {screen == "start" && 
-                    <div>
-                        <h2>START SCREEN</h2>
+                    <div className = "start-container">
                         <h3>CLICK THE BUTTON BELOW TO BEGIN</h3>
-                        <button onClick={this.handleStart}>START</button>
+                        <motion.button className = "start_button" onClick = {this.handleStart} whileHover={{scale: 1.1}} variant = "primary">start</motion.button>
                     </div>
+                   
                 }
                 {screen == "form" && 
-                    <div>
+                    <div className = "form-container">
+                        <h2>
+                            You are plannning a rocket to launch.
+                            Enter your launch plans below! 
+                        </h2>
                         <form onSubmit={this.handleSubmit}>
                             <label>
                                 Wind Direction
-                                <select name="direction" value={this.state.direction} onChange={this.handleChange}>
-                                    <option value="right">Right</option>
-                                    <option value="left">Left</option>
-                                </select>
+                                <div className = "direction-form">
+                                    <select name="direction" value={this.state.direction} onChange={this.handleChange}>
+                                        <option value="right">Right</option>
+                                        <option value="left">Left</option>
+                                    </select>
+                                </div>
                             </label>
                             <label>
                                 Wind Speed
-                                <input name="wind" type="number" min="1" max="10" value={this.state.wind} onChange={this.handleChange} />
+                                <div className = "wind-form">
+                                    <input name="wind" type="number" min="1" max="10" value={this.state.wind} onChange={this.handleChange} />
+                                </div>
                             </label>
                             <label>
                                 Fin Size
-                                <input name="finSize" type="number" min="1" max="10" value={this.state.finSize} onChange={this.handleChange} />
+                                <div className = "finSize-form">
+                                    <input name="finSize" type="number" min="1" max="10" value={this.state.finSize} onChange={this.handleChange} />
+                                </div>
                             </label>
-                            <input type="submit" value="Submit" />
+                            <motion.button className = "submit_button" type="submit" whileHover={{scale: 1.1}} variant = "primary">Done</motion.button>
                         </form>
+                        <motion.div className = "motion-box" animate={{ x: 0, y: 0, scale: 1, rotate: 0, }} />
                     </div>
                 }
                 {screen == "simulation" && 
