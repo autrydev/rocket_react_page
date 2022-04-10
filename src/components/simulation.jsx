@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import { motion } from "framer-motion";
 import "../index.css";
-import "../images/space_start.jpg";
-
-
-
-const space_picture = new URL("../images/space_start.jpg", import.meta.url);
-const rocket_picture = new URL("../images/rocket_start.png", import.meta.url);
 
 class Simulation extends Component {
     state = {
@@ -17,8 +11,8 @@ class Simulation extends Component {
         wind: 0 // integer values 1 - 10
     }
     
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.handleStart = this.handleStart.bind(this);
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
