@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { Box, Button } from '@mui/material';
-import rocketwind from '../Assets/rocketwind.gif'
+import rocketwind from '../Assets/rocketwind.gif';
 import Quiz from './Quiz';
 import './styles.css';
 
@@ -165,7 +165,7 @@ function EduContent() {
 
                 <h2 className="header-font" ref = {quizRef}>Test Your Knowledge!</h2>
                 {/* Quiz */}
-                <Quiz />
+                <Quiz/>
                 <br/>
 
                 <h2 className="header-font" ref = {simRef}>Simulation</h2>
