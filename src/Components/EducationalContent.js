@@ -2,6 +2,7 @@ import React, { useRef } from "react";
 import { Box, Button } from '@mui/material';
 import rocketwind from '../Assets/rocketwind.gif';
 import Quiz from './Quiz';
+import Simulation from './simulation';
 import './styles.css';
 
 
@@ -189,10 +190,19 @@ function EduContent() {
                 }}
             >
                 <h2 className="header-font" ref = {simRef}>Simulation</h2>
-                {/* Simulation App */}
                 <br/>
             </div>
             
+            <div
+                style={{
+                    marginLeft: 75
+                }}
+                className = "sim-app"
+            >
+                {/* Simulation App */}
+                <Simulation/>
+                <br/>
+            </div>
         </>
       </Box>
     );

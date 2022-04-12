@@ -32,3 +32,116 @@
   border-radius: 7;
   display: 'flex';
 }
+
+.sim-app{
+  background-color: #C4C4C4;
+  border-radius: 10px;
+  margin:5px;
+  display: flex;
+  width:1000px;
+  color: #000000;
+  height:500px;
+}
+
+/* Simulation */
+.str_button { 
+  background-color: #FF443A;
+  font-size: 40px;
+  height: 80px;
+  width: 250px;
+  margin-top: 220px;
+  border-radius: 45px;
+  text-size-adjust: 10px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.start-container { 
+  background-Image: url("../Assets/SimBackground.png");
+  background-size: 110%;
+  border-radius: 10px;
+  width: 1000px;
+  height: 600px;
+  margin-top: -85px;
+  text-align: center;
+}
+
+.start-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+/*
+.create { 
+  background-Image: url("./images/space_form.jpg");
+}
+*/
+.direction-form select{
+  padding: 8px 10px;
+  background-color: #BAD2DD;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-size: large;
+}
+
+.submit_button { 
+  background-color: orangered;
+  border-radius: 10px;
+  height: 45px;
+  width: 130px;
+  font-size: 18px;
+  margin: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700px;
+  color: #ffffff;
+}
+
+.wind-form input { 
+  padding: 8px 10px;
+  border-radius: 5px ;
+  margin: 5px 0;
+  background-color: #BAD2DD;
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.finSize-form input { 
+  padding: 8px 10px;
+  border-radius: 5px ;
+  margin: 5px 0;
+  background-color: #BAD2DD;
+  font-size: large;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.form-data { 
+  font-size:large;
+}
+
+.form-container {
+  background-color: #30394C;
+  border-radius: 10px;
+  width: 1000px;
+  height: 580px;
+  margin-top: -85px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sim-container {
+  background-color: #30394C;
+  border-radius: 10px;
+  width: 1000px;
+  height: 580px;
+  margin-top: -85px;
+  text-align: center;
+  font-size: 30px;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  
+}
