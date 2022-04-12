@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { Box, Button } from '@mui/material';
 import rocketwind from '../Assets/rocketwind.gif';
+import fin from '../Assets/FinsPic.png';
+import overview from '../Assets/Overview.mp4';
 import Quiz from './Quiz';
 import Simulation from './simulation';
 import './styles.css';
@@ -72,9 +74,10 @@ function EduContent() {
                 <button 
                     className="table-list"
                     variant = "text"
-                    onClick = {flyScroll}
+                    onClick = {quizScroll}
+
                 >
-                    Flying with the Wind
+                    Test Your Knowledge!
                 </button>
                 <br/>
 
@@ -165,6 +168,17 @@ function EduContent() {
                     will end up as it flies through the sky.
                 </p>
                 <br/>
+                
+                <img src = {fin} className = ".gif"
+                    style = {{
+                        width:900,
+                        height:700,
+                        marginTop:-8,
+                        marginLeft: -20
+                    }} 
+                />
+
+                <br/>
 
                 <h2 
                     className="header-font" 
@@ -184,6 +198,17 @@ function EduContent() {
                     The stronger the winds, the faster the rocket will rotate into the wind. The larger the fins, the more
                      wind is forced on the rockets and the faster the rocket will rotate into the wind.
                 </p>
+                <br/>
+                <h4 className="font-link" style = {{fontSize: 20}}>Content Overview</h4>
+                <video 
+                    controls 
+                    style = {{
+                        marginLeft: -40
+                    }}
+                >
+                    <source src={overview} type="video/mp4"/>
+                </video>
+                <br/>
                 <br/>
             </div>
             

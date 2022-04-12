@@ -1,26 +1,25 @@
 const questions=[
 {
     QNumber: 0,
-    Question: "  Question: Johnny launches his rocket #m/s horizontally from a height of # m. Add more specific information. How far will the rocket travel?",
+    Question: "  Question #1: When the wind pushes on the rockets fin, how is the direction of the rocket changed?",
     Answer: 0,
     Options: [
-        {Answer: "1" , isTrue: true},
-        {Answer: "2" , isTrue: false},
-        {Answer: "3" , isTrue: false},
-        {Answer: "4" , isTrue: false}
+        {Answer: "Angled towards the wind" , isTrue: true},
+        {Answer: "Angled away from the wind" , isTrue: false},
+        {Answer: "Remains the same" , isTrue: false},
+        {Answer: "None of the above" , isTrue: false}
     ]
 },
 {
     QNumber: 1,
-    Question: "  q2?",
+    Question: "  Question #2: Rocket fins are used to _________ a rocket during its flight.",
     Answer: 2,
     Options: [
-        {Answer: "11" , isTrue: false},
-        {Answer: "22" , isTrue: false},
-        {Answer: "33" , isTrue: true},
-        {Answer: "44" , isTrue: false}
+        {Answer: "Unsteady" , isTrue: false},
+        {Answer: "Decorate" , isTrue: false},
+        {Answer: "Stabalize" , isTrue: true},
+        {Answer: "Speed" , isTrue: false}
     ]
 }
-
 ]
 export default questions;
