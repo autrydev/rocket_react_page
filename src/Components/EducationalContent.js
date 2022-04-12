@@ -28,7 +28,11 @@ function EduContent() {
       >
         <>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <h1 className="header-font">Effects of Wind Gusts on Rockets</h1>
+                <h1 className="header-font"
+                    style = {{fontSize: 50}}
+                >
+                    Effects of Wind Gusts on Rockets
+                </h1>
             </div>
             <br/> <br/>
             {/* Table of Content */}
@@ -128,7 +132,13 @@ function EduContent() {
                     marginRight: 150
                 }}
             >
-                <h2 className="header-font" ref = {windRef}>Wind</h2>
+                <h2 
+                    className="header-font" 
+                    ref = {windRef}
+                    style = {{fontSize: 30}}
+                >
+                    Wind
+                </h2>
                 <p className = "content-font" >
                     When flying a rocket into the sky, you would think the rocket would immediately
                     go in the direction it’s pointing as soon as it launches - however, that’s not what happens. 
@@ -139,7 +149,13 @@ function EduContent() {
                 </p>
                 <br/>
 
-                <h2 className="header-font" ref = {finsRef}>Fins</h2>
+                <h2 
+                    className="header-font" 
+                    ref = {finsRef}
+                    style = {{fontSize: 30}}
+                >
+                    Fins
+                </h2>
                 <p className="content-font">
                     Before we can understand how wind affects the rocket, we first need to understand what fins 
                     are and what they’re used for. Fins are attached to rockets to provide stability and control 
@@ -149,7 +165,13 @@ function EduContent() {
                 </p>
                 <br/>
 
-                <h2 className="header-font" ref = {flyRef}>Flying with the Wind</h2>
+                <h2 
+                    className="header-font" 
+                    ref = {flyRef}
+                    style = {{fontSize: 30}}
+                >
+                    Flying with the Wind
+                </h2>
                 <p className="content-font">
                     When you put a piece of paper in front of a fan, the paper usually moves away from the fan. However, 
                     when a rocket experiences wind, the force of the wind is greater on the fins than the rest of the 
@@ -170,7 +192,13 @@ function EduContent() {
                     marginRight: 150
                 }}
             >
-                <h2 className="header-font" ref = {quizRef}>Test Your Knowledge!</h2>
+                <h2 
+                    className="header-font" 
+                    ref = {quizRef}
+                    style = {{fontSize: 30}}
+                >
+                    Test Your Knowledge!
+                </h2>
             </div>
             
             <div
@@ -189,13 +217,20 @@ function EduContent() {
                     marginRight: 150
                 }}
             >
-                <h2 className="header-font" ref = {simRef}>Simulation</h2>
+                <h2 
+                    className="header-font" 
+                    ref = {simRef}
+                    style = {{fontSize: 30}}
+                >
+                    Simulation
+                </h2>
                 <br/>
             </div>
             
             <div
                 style={{
-                    marginLeft: 75
+                    marginLeft: 75,
+                    marginTop: -15
                 }}
                 className = "sim-app"
             >

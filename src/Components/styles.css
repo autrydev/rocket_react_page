@@ -1,6 +1,7 @@
 /* Educational Content */
 .content-font {
   font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
 }
 
 .font-link {
@@ -63,7 +64,7 @@
   border-radius: 10px;
   width: 1000px;
   height: 600px;
-  margin-top: -85px;
+  margin-top: -65px;
   text-align: center;
 }
 
