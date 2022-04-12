@@ -40,12 +40,12 @@ function EduContent() {
                 sx={{ 
                     m: 1,
                     // p: 10,
-                    width: 250,
-                    height: 260,
-                    marginLeft: 20, 
+                    width: 300,
+                    height: 400,
+                    marginLeft: 10, 
                     borderRadius: 7,
                     bgcolor: '#E6E6E6',
-                    // display: 'flex',
+                    marginTop:-1,
                     float: 'left',
                 }}
             >
@@ -82,6 +82,7 @@ function EduContent() {
                     className="table-list"
                     variant = "text"
                     onClick = {quizScroll}
+
                 >
                     Test Your Knowledge!
                 </button>
@@ -115,8 +116,8 @@ function EduContent() {
             {/* Rocket Graphic */}
             <img src = {rocketwind} className = ".gif"
                 style = {{
-                    width:500,
-                    height:300,
+                    width:600,
+                    height:400,
                     marginLeft:70,
                     marginTop:-8,
                     borderRadius: 30,
