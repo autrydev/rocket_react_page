@@ -122,7 +122,6 @@ function EduContent() {
 
             {/* Educational Content */}
             <div
-
                 style={{
                     marginLeft: 150,
                     marginRight: 150
@@ -162,12 +161,33 @@ function EduContent() {
                      wind is forced on the rockets and the faster the rocket will rotate into the wind.
                 </p>
                 <br/>
-
+            </div>
+            
+            <div
+                style={{
+                    marginLeft: 150,
+                    marginRight: 150
+                }}
+            >
                 <h2 className="header-font" ref = {quizRef}>Test Your Knowledge!</h2>
+            </div>
+            
+            <div
+                style={{
+                    marginLeft: 75
+                }}
+            >
                 {/* Quiz */}
                 <Quiz/>
                 <br/>
-
+            </div>
+            
+            <div
+                style={{
+                    marginLeft: 150,
+                    marginRight: 150
+                }}
+            >
                 <h2 className="header-font" ref = {simRef}>Simulation</h2>
                 {/* Simulation App */}
                 <br/>
