@@ -140,15 +140,36 @@ button.table-buttons:hover{
   font-family: 'Montserrat', sans-serif;
 }
 
-.sim-container {
-  background-color: #30394C;
+.sim-container-left {
+  background-Image: url("../Assets/SimBackground-WindLeft.png");
+  background-size: 110%;
   border-radius: 10px;
   width: 1000px;
-  height: 580px;
-  margin-top: -85px;
+  height: 600px;
+  margin-top: -65px;
   text-align: center;
-  font-size: 30px;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
   
+}
+
+.sim-container-right {
+  background-Image: url("../Assets/SimBackground-WindRight.png");
+  background-size: 110%;
+  border-radius: 10px;
+  width: 1000px;
+  height: 600px;
+  margin-top: -65px;
+  text-align: center;
+  
+}
+
+.path {
+  offset-path: path(
+    "M500,550 C500,300 850,300 900,300"
+  );
+}
+
+.rocket {
+  height: 100px;
+  width: 100px;
+  transform: rotate(90deg);
 }

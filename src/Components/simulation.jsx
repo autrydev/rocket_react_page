@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import { motion } from "framer-motion";
+import { AnimateSharedLayout, motion } from "framer-motion";
 import './styles.css';
 import SimBG from "../Assets/SimBackground.png";
+import Animation from "./animation";
+
 
 class Simulation extends Component {
     state = {
@@ -37,7 +39,7 @@ class Simulation extends Component {
         this.setState({ screen : "simulation"});
     }
     
-    render() { 
+    render() {
         let started = this.state.started;
         let screen = this.state.screen;
        
@@ -91,14 +93,8 @@ class Simulation extends Component {
                     </div>
                 }
                 {screen === "simulation" && 
-                    <div className= "sim-container">
-                        <h2 
-                            style ={{
-                                marginTop: 20,
-                            }}
-                        >
-                            INSERT SIMULATION HERE
-                        </h2>
+                    <div className= {(this.state.direction === "left") ? "sim-container-left" : "sim-container-right"} >
+                        <Animation finSize={this.state.finSize} wind={this.state.wind}/>
                     </div>
                 }
             </div>
