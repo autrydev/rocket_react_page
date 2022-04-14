@@ -10,8 +10,8 @@ class Simulation extends Component {
         started: false,
         screen: "start", // "start", "form", "simulation", "restart"
         direction: "right", // "left" or "right"
-        finSize: 0, // integer values 1 - 10
-        wind: 0 // integer values 1 - 10
+        finSize: 1, // integer values 1 - 10
+        wind: 1 // integer values 1 - 10
     }
     
     constructor() {
@@ -70,7 +70,6 @@ class Simulation extends Component {
                                 Wind Direction
                                 <div className = "direction-form">
                                     <select name="direction" value={this.state.direction} onChange={this.handleChange}>
-                                        <option value="" disabled selected>Select...</option>
                                         <option value="right">Right</option>
                                         <option value="left">Left</option>
                                     </select>

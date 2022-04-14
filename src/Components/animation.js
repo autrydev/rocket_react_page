@@ -6,6 +6,7 @@ import './styles.css';
 function Animation(props) {
 
     const path = "path" + (parseInt(props.finSize)+parseInt(props.wind)) + ((props.direction === "left") ? "l" : "r");
+    const fileUrl = require('../Assets/Rocket_Fin' + props.finSize + '.png');
 
     const { offsetDistance, scale } = useSpring({
         from: { offsetDistance: "0%", scale: 1},
@@ -24,7 +25,7 @@ function Animation(props) {
                 scale
                 }}
             >
-                <animated.img src={require('../Assets/Rocket_Fin5.png')} alt='rocket' className='rocket'/>
+                <animated.img src={fileUrl} alt='rocket' className='rocket'/>
             </animated.div>
         </div>
     );
