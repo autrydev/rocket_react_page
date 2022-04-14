@@ -56,7 +56,7 @@ class Simulation extends Component {
                         >
                                 START
                         </motion.button>
-                        <h3 className = "start-text">CLICK THE BUTTON BELOW TO BEGIN</h3>
+                        <h3 className = "start-text">CLICK THE BUTTON ABOVE TO BEGIN</h3>
                     </div>
                 }
                 {screen === "form" && 
