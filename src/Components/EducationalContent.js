@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Box, Button } from '@mui/material';
 import rocketwind from '../Assets/rocketwind.gif';
 import fin from '../Assets/FinsPic.png';
@@ -6,6 +6,7 @@ import overview from '../Assets/Overview.mp4';
 import Quiz from './Quiz';
 import Simulation from './simulation';
 import './styles.css';
+import { hover } from "@testing-library/user-event/dist/hover";
 
 
 function EduContent() {
@@ -21,6 +22,28 @@ function EduContent() {
     const flyScroll = () => flyRef.current.scrollIntoView();
     const quizScroll = () => quizRef.current.scrollIntoView();
     const simScroll = () => simRef.current.scrollIntoView();
+
+    // Hover over button
+    const [hoverW, setHoverW] = useState(); // Wind
+    const [hoverF, setHoverF] = useState(); // Fin
+    const [hoverFW, setHoverFW] = useState(); // Flying with the Wind
+    const [hoverT, setHoverT] = useState(); // Test Your Knowledge
+    const [hoverS, setHoverS] = useState(); // Simulation
+
+    const mouseOverW = () => { setHoverW(true); }
+    const mouseOffW = () => { setHoverW(false); }
+
+    const mouseOverF = () => { setHoverF(true); }
+    const mouseOffF = () => { setHoverF(false); }
+
+    const mouseOverFW = () => { setHoverFW(true); }
+    const mouseOffFW = () => { setHoverFW(false); }
+
+    const mouseOverT = () => { setHoverT(true); }
+    const mouseOffT = () => { setHoverT(false); }
+
+    const mouseOverS = () => { setHoverS(true); }
+    const mouseOffS = () => { setHoverS(false); }
 
     return(
       <Box 
@@ -54,27 +77,47 @@ function EduContent() {
                 {/* Input T.O.C */}
                 <h3 className = "table-content">Table of Content: </h3>
                 <button 
-                    className = "table-list"
+                    className = {hoverW ? "on-button" :  "table-list" }
                     variant = "text"
                     onClick = {windScroll}
+                    onMouseOut = {mouseOffW}
+                    onMouseOver = {mouseOverW}
                 >
                     Wind
                 </button>
                 <br/>
 
                 <button 
-                    className="table-list"
+                    className = {hoverF ? "on-button" :  "table-list" }
                     variant = "text"
                     onClick = {finsScroll}
+                    
+                    onMouseOut = {mouseOffF}
+                    onMouseOver = {mouseOverF}
                 >
                     Fins
                 </button>
                 <br/>
 
                 <button 
-                    className="table-list"
+                    className = {hoverFW ? "on-button" :  "table-list" }
+                    variant = "text"
+                    onClick = {flyScroll}
+
+                    onMouseOut = {mouseOffFW}
+                    onMouseOver = {mouseOverFW}
+                >
+                    Flying with the Wind
+                </button>
+                <br/>
+
+                <button 
+                    className = {hoverT ? "on-button" :  "table-list" }
                     variant = "text"
                     onClick = {quizScroll}
+
+                    onMouseOut = {mouseOffT}
+                    onMouseOver = {mouseOverT}
 
                 >
                     Test Your Knowledge!
@@ -82,38 +125,16 @@ function EduContent() {
                 <br/>
 
                 <button 
-                    className="table-list"
-                    variant = "text"
-                    onClick = {quizScroll}
-
-                >
-                    Test Your Knowledge!
-                </button>
-                <br/>
-
-                <button 
-                    className="table-list"
+                    className = {hoverS ? "on-button" :  "table-list" }
                     variant = "text"
                     onClick = {simScroll}
+
+                    onMouseOut = {mouseOffS}
+                    onMouseOver = {mouseOverS}
                 >
                     Simulation
                 </button>
                 <br/>
-
-                {/* <ul className="table-list">
-                    <li>
-                        <button 
-                            className="table-list"
-                            variant = "text"
-                        >
-                            Wind
-                        </button>
-                    </li>
-                    <li>Fins</li>
-                    <li>Flying with the Wind</li>
-                    <li>Test Your Knowledge!</li>
-                    <li>Simulation</li>
-                </ul> */}
             </Box>
                 
             {/* Rocket Graphic */}
