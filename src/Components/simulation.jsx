@@ -9,7 +9,7 @@ class Simulation extends Component {
     state = {
         started: false,
         screen: "start", // "start", "form", "simulation", "restart"
-        direction: "", // "left" or "right"
+        direction: "right", // "left" or "right"
         finSize: 0, // integer values 1 - 10
         wind: 0 // integer values 1 - 10
     }
@@ -70,6 +70,7 @@ class Simulation extends Component {
                                 Wind Direction
                                 <div className = "direction-form">
                                     <select name="direction" value={this.state.direction} onChange={this.handleChange}>
+                                        <option value="" disabled selected>Select...</option>
                                         <option value="right">Right</option>
                                         <option value="left">Left</option>
                                     </select>
@@ -87,14 +88,21 @@ class Simulation extends Component {
                                     <input name="finSize" type="number" min="1" max="10" value={this.state.finSize} onChange={this.handleChange} />
                                 </div>
                             </label>
-                            <motion.button className = "submit_button" type="submit" whileHover={{scale: 1.1}} variant = "primary">Done</motion.button>
+                            <motion.button className = "submit_button" type="submit" whileHover={{scale: 1.1}} variant = "primary">LAUNCH</motion.button>
                         </form>
                         <motion.div className = "motion-box" animate={{ x: 0, y: 0, scale: 1, rotate: 0, }} />
                     </div>
                 }
                 {screen === "simulation" && 
                     <div className= {(this.state.direction === "left") ? "sim-container-left" : "sim-container-right"} >
-                        <Animation finSize={this.state.finSize} wind={this.state.wind}/>
+                        <Animation finSize={this.state.finSize} wind={this.state.wind} direction={this.state.direction}/>
+                        <motion.button className = "return_button" 
+                            onClick = {this.handleStart} 
+                            whileHover={{scale: 1.2}} 
+                            variant = "primary"
+                        >
+                                Launch Plans
+                        </motion.button>
                     </div>
                 }
             </div>

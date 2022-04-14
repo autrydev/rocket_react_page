@@ -5,8 +5,7 @@ import './styles.css';
 
 function Animation(props) {
 
-    const distance = ((parseInt(props.finSize)+parseInt(props.wind))*5)+"%";
-    console.log("Distance: " + distance);
+    const path = "path" + (parseInt(props.finSize)+parseInt(props.wind)) + ((props.direction === "left") ? "l" : "r");
 
     const { offsetDistance, scale } = useSpring({
         from: { offsetDistance: "0%", scale: 1},
@@ -19,7 +18,7 @@ function Animation(props) {
     return (
         <div>
             <animated.div
-                className="path"
+                className={path}
                 style={{
                 offsetDistance,
                 scale

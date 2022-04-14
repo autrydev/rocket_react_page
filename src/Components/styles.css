@@ -159,13 +159,6 @@ button.table-buttons:hover{
   height: 600px;
   margin-top: -65px;
   text-align: center;
-  
-}
-
-.path {
-  offset-path: path(
-    "M500,550 C500,300 850,300 900,300"
-  );
 }
 
 .rocket {
@@ -173,3 +166,56 @@ button.table-buttons:hover{
   width: 100px;
   transform: rotate(90deg);
 }
+
+.return_button { 
+  background-color: #FF443A;
+  font-size: 20px;
+  height: 60px;
+  width: 200px;
+  margin-top: 400px;
+  margin-left: 750px;
+  border-radius: 45px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.path20r { offset-path: path("M500,550 C500,300 250,300 100,300"); }
+.path19r { offset-path: path("M500,550 C500,300 261,296 100,288"); }
+.path18r { offset-path: path("M500,550 C500,300 272,284 100,272"); }
+.path17r { offset-path: path("M500,550 C500,300 283,270 100,255"); }
+.path16r { offset-path: path("M500,550 C500,300 294,256 100,240"); }
+.path15r { offset-path: path("M500,550 C500,300 305,242 100,220"); }
+.path14r { offset-path: path("M500,550 C500,300 316,228 100,190"); }
+.path13r { offset-path: path("M500,550 C500,300 327,214 100,156"); }
+.path12r { offset-path: path("M500,550 C500,300 338,200 100,120"); }
+.path11r { offset-path: path("M500,550 C500,300 349,186 100,80"); }
+.path10r { offset-path: path("M500,550 C500,300 360,172 118,50"); }
+.path9r { offset-path: path("M500,550 C500,300 371,158 180,50"); }
+.path8r { offset-path: path("M500,550 C500,300 382,144 240,50"); }
+.path7r { offset-path: path("M500,550 C500,300 393,130 290,50"); }
+.path6r { offset-path: path("M500,550 C500,300 404,116 328,50"); }
+.path5r { offset-path: path("M500,550 C500,300 415,102 360,50"); }
+.path4r { offset-path: path("M500,550 C500,300 426,88 395,50"); }
+.path3r { offset-path: path("M500,550 C500,300 438,74 420,50"); }
+.path2r { offset-path: path("M500,550 C500,290 450,65 448,55"); }
+
+.path20l { offset-path: path("M500,550 C500,300 750,300 900,300"); }
+.path19l { offset-path: path("M500,550 C500,300 739,296 900,288"); }
+.path18l { offset-path: path("M500,550 C500,300 728,284 900,272"); }
+.path17l { offset-path: path("M500,550 C500,300 717,270 900,255"); }
+.path16l { offset-path: path("M500,550 C500,300 706,256 900,240"); }
+.path15l { offset-path: path("M500,550 C500,300 695,242 900,220"); }
+.path14l { offset-path: path("M500,550 C500,300 684,228 900,190"); }
+.path13l { offset-path: path("M500,550 C500,300 673,214 900,156"); }
+.path12l { offset-path: path("M500,550 C500,300 662,200 900,120"); }
+.path11l { offset-path: path("M500,550 C500,300 651,186 900,80"); }
+.path10l { offset-path: path("M500,550 C500,300 640,172 882,50"); }
+.path9l { offset-path: path("M500,550 C500,300 629,158 820,50"); }
+.path8l { offset-path: path("M500,550 C500,300 618,144 760,50"); }
+.path7l { offset-path: path("M500,550 C500,300 607,130 710,50"); }
+.path6l { offset-path: path("M500,550 C500,300 596,116 672,50"); }
+.path5l { offset-path: path("M500,550 C500,300 585,102 640,50"); }
+.path4l { offset-path: path("M500,550 C500,300 574,88 605,50"); }
+.path3l { offset-path: path("M500,550 C500,300 562,74 580,50"); }
+.path2l { offset-path: path("M500,550 C500,290 550,65 552,55"); }
