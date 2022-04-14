@@ -25,7 +25,7 @@ export default function Quiz() {
         //wait 5 sec before next quesiton
 
         setCurrentQuestion(tmp)
-
+        setIsAnsweredCorrectly(false)
         setIsAnswered(false)
       }
     }
