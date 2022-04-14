@@ -102,6 +102,7 @@ class Simulation extends Component {
                         >
                                 Launch Plans
                         </motion.button>
+                        <div className="mph_label">{this.state.wind} MPH {(this.state.direction === "left") ? '\u2190' : '\u2192'}</div>
                     </div>
                 }
             </div>

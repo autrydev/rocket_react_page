@@ -180,6 +180,15 @@ button.table-buttons:hover{
   font-weight: 700;
 }
 
+.mph_label {
+  font-size: 20px;
+  margin-left: 50px;
+  text-align: left;
+  margin-top: -43px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
 .path20r { offset-path: path("M500,550 C500,300 250,300 100,300"); }
 .path19r { offset-path: path("M500,550 C500,300 261,296 100,288"); }
 .path18r { offset-path: path("M500,550 C500,300 272,284 100,272"); }
