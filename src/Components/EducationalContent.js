@@ -75,7 +75,7 @@ function EduContent() {
                 }}
             >
                 {/* Input T.O.C */}
-                <h3 className = "table-content">Table of Content: </h3>
+                <h3 className = "table-content">Table of Contents: </h3>
                 <button 
                     className = {hoverW ? "on-button" :  "table-list" }
                     variant = "text"
